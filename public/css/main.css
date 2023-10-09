@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+    background-color: paleturquoise;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    transform: scale(1.2);
+  }
+  
+
+  

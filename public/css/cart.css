@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.row{
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    transition: transform .3s ease-in-out;
+}
+
+.row:hover{
+    background-color: lightblue;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+}
+
+.total{
+    padding-top: 100px;
+}

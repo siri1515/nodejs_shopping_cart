@@ -1,0 +1,63 @@
+body{
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 20%;
+    height: 350px;
+    background-color: lightcyan;
+    border: 1px solid #ccc;
+    border-radius: 10px; /*Make the border become rounded corners*/
+    margin: 20px;
+}
+
+.card h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.card p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card button {
+    margin-top: 20px;
+    margin-left: 70px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+.card button:hover {
+    background-color: #2980b9;
+    color: black;
+}
+
+.card:hover{
+    background-color: lightblue;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

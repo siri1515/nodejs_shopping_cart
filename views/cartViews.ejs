@@ -1,0 +1,23 @@
+<%- include('./general/head.ejs') %>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <%- include('./general/nav.ejs') %>
+    <main>
+        <h1>Cart</h1>
+        <div class="container">
+            <% cart.forEach((item) => { %>
+            <div class="row">
+                <h2><%= item.product.Name %></h2>
+                <p><strong>$<%= item.product.Price %></strong></p>
+                <form action="/delete-product" method="post">
+                    <input type="hidden" name="deletedProductID" value="<%= item.product.ID %>">
+                    <button>Delete</button>
+                </form>
+            </div>
+            <% }); %>
+        </div>
+        <p class="total">Total: $<%= total %></p>
+    </main>
+</body>
+

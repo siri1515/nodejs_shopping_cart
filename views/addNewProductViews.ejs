@@ -1,0 +1,50 @@
+<%- include('./general/head.ejs') %>
+    <link rel="stylesheet" href="/css/add.css">
+</head>
+<body>
+    <%- include('./general/nav.ejs') %>
+    <div class="container">
+        <form class="form" action="/add-new-product" method="POST" onsubmit="return inputCheck()">
+            <h1>Add Your Product</h1>
+            <label for="name" class="row">Product Name</label>
+            <input type="text" name="name" id="name" class="input">
+            <label for="color" class="row">Product Color</label>
+            <input type="text" name="color" id="color" class="input">
+            <label for="price" class="row">Product Price</label>
+            <input type="number" name="price" id="price" class="input">
+            <label for="size" class="row">Product Size</label>
+            <select id="size" name="size" class="input">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <label for="brand" class="row">Product Brand</label>
+            <input type="text" name="brand" id="brand" class="input">
+            <label for="category" class="row">Product Category</label>
+            <select id="category" name="category" class="input">
+                <option value="top">top</option>
+                <option value="bottom">bottom</option>
+                <option value="other">other</option>
+            </select>
+            <button type="submit" class="button">submit</button>
+        </form>
+    </div>
+
+    <script>
+        function inputCheck() {
+          const name = document.getElementById('name').value;
+          const color = document.getElementById('color').value;
+          const price = document.getElementById('price').value;
+          const size = document.getElementById('size').value;
+          const brand = document.getElementById('brand').value;
+          const category = document.getElementById('category').value;
+          if (name === "" || color === "" || price === "" || size === "" || brand === "" || category === "") {
+            alert('Please fill out all fields.');
+            return false;
+          }
+          return true;
+        }
+    </script>
+</body>

@@ -1,0 +1,12 @@
+[
+    {   
+        "Name": "hat",
+        "ID": "1",
+        "Color": "black",
+        "Price": 12,
+        "Size": "S",
+        "Brand": "HM",
+        "Category": "Hat",
+        "Image": "/picture/white_clothes.jpg"
+    }
+]

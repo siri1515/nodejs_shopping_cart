@@ -1,0 +1,29 @@
+<%- include('./general/head.ejs') %>
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+<body>
+    <%- include('./general/nav.ejs') %>
+
+    <div class="block">
+        <ul>
+            <div class="box">
+                <% products.forEach((product) => { %>
+                    <div class="card">
+                        <h1><%= product.Name %></h1>
+                        <p><strong>CA $<%= product.Price %></strong></p>
+                        <p><%= product.ID %></p>
+                        <p><%= product._id %></p>
+                        <p><%= product.Color %></p>
+                        <p><%= product.Size %></p>
+                        <p>Brand: <%= product.Brand %></p>
+                        <p>Category: <%= product.Category %></p>
+                        <form action="/add-to-cart" method="post">
+                            <input type="hidden" name="productId" value="<%= product.ID %>">
+                            <button type="submit">Add To Cart</button>
+                        </form>
+                    </div>
+                <% }); %>
+            </div>
+        </ul>
+    </div>
+</body>
