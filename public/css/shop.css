@@ -16,7 +16,7 @@ h1{
 
 .card{
     width: 20%;
-    height: 350px;
+    height: 400px;
     background-color: lightcyan;
     border: 1px solid #ccc;
     border-radius: 10px; /*Make the border become rounded corners*/

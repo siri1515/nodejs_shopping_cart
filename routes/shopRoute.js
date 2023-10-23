@@ -100,11 +100,11 @@ router.post('/delete-product', (req, res) => {
 router.get('/cart', (req, res) => {
   res.render('cartViews', { cart, total, path: '/cart' });
 })
-
+/*
 router.get('/addNewProducts', (req, res) => {
   res.render('addNewProductViews', { path: '/addNewProducts' })
 })
-
+*/
 router.get('/productDetail', (req, res) => {
   res.send('here is something');
 })

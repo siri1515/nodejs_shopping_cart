@@ -1,12 +1,56 @@
 [
     {   
-        "Name": "hat",
+        "Name": "Hat",
         "ID": "1",
         "Color": "black",
         "Price": 12,
         "Size": "S",
         "Brand": "HM",
-        "Category": "Hat",
-        "Image": "/picture/white_clothes.jpg"
+        "Category": "Hat"
+    },
+    {   
+        "Name": "Skirt",
+        "ID": "2",
+        "Color": "white",
+        "Price": 30,
+        "Size": "M",
+        "Brand": "Zara",
+        "Category": "Bottom"
+    },
+    {   
+        "Name": "Sun Glasses",
+        "ID": "3",
+        "Color": "Pink",
+        "Price": 25,
+        "Size": "NULL",
+        "Brand": "Zara",
+        "Category": "Other"
+    },
+    {   
+        "Name": "Jacket",
+        "ID": "4",
+        "Color": "Green",
+        "Price": 80,
+        "Size": "L",
+        "Brand": "Zara",
+        "Category": "Top"
+    },
+    {   
+        "Name": "Gloves",
+        "ID": "5",
+        "Color": "Black",
+        "Price": 17,
+        "Size": "NULL",
+        "Brand": "HM",
+        "Category": "Other"
+    },
+    {   
+        "Name": "Dress",
+        "ID": "6",
+        "Color": "White",
+        "Price": 78,
+        "Size": "L",
+        "Brand": "Zara",
+        "Category": "Dress"
     }
 ]
