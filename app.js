@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true})
-  .then((result) => app.listen(3001))
+  .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
 
 
