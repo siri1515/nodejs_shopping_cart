@@ -8,6 +8,7 @@ const { REFUSED } = require('dns');
 const data = fs.readFileSync('productsData.json');
 const documents = JSON.parse(data);
 
+/*
 Product.insertMany(documents)
   .then(docs => {
     console.log(`${docs.length} documents inserted`);
@@ -15,7 +16,7 @@ Product.insertMany(documents)
   .catch(error => {
     console.error(error);
   });
-
+*/
 
 
 let cart = [];
